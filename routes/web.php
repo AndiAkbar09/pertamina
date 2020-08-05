@@ -18,3 +18,9 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::group(['prefix'=> 'pertaminas'], function(){
+    Route::get('index', 'PendaftaranController@index')->name('pendaftarans');
+
+    Route::get('create','PendaftaranController@create')->name('pendaftarans.create');
+});
