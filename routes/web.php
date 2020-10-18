@@ -19,8 +19,15 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::group(['prefix'=> 'pertaminas'], function(){
-    Route::get('index', 'PendaftaranController@index')->name('pendaftarans');
+// Route Pendaftaran
 
+Route::group(['prefix'=> 'pendaftaran'], function(){
+    Route::get('index', 'PendaftaranController@index')->name('pendaftarans');
+    Route::post('save','PendaftaranController@store')->name('pendaftarans.save');
     Route::get('create','PendaftaranController@create')->name('pendaftarans.create');
+});
+
+// Route Monitoring Penjualan Oli
+Route::group(['prefix'=>'penjualan_oli'], function(){
+    Route::get('index', 'Monitoring\PenjualanoliController@index')->name('penjualans.oli');
 });

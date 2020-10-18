@@ -18,6 +18,7 @@ class CreateOlisTable extends Migration
             $table->string('produk');
             $table->string('ukuran');
             $table->string('harga');
+            $table->string('tanggal');
             $table->timestamps();
         });
     }

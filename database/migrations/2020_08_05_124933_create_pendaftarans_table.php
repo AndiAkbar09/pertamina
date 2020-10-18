@@ -18,10 +18,10 @@ class CreatePendaftaransTable extends Migration
             $table->unsignedInteger('user_id');
             $table->string('nama_lengkap');
             $table->string('nik');
-            $table->string('agama');
-            $table->string('nomor_telp');
-            $table->string('jenis_kelamin');
-            $table->string('alamat');
+            $table->string('tanggal');
+            $table->string('status');
+            $table->string('no_telp');
+            $table->string('map_laring');
             $table->timestamps();
         });
     }

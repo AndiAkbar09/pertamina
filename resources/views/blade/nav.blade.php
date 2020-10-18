@@ -11,21 +11,24 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Left Side Of Navbar -->
+                    <!-- Left Side Of Navbar-->
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Monitoring Penjualan
                             </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="">Penjualan Oli</a>
+                            <a class="dropdown-item" href="{{route('penjualans.oli')}}">Penjualan Oli</a>
                             <a class="dropdown-item" href="">Penjualan Gas</a>
-                    </li>
+                        </li>
                         <li class="nav-item">
                             <a href="" class="nav-link">Monitoring Setoran Keuangan</a>
                         </li>
                         <li class="nav-item">
                             <a href="{{route('pendaftarans')}}" class="nav-link">Pendaftaran</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Informasi</a>
                         </li>
                     </ul>
 
